@@ -13,7 +13,7 @@ mongodb.checkDb((err) => {
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
     app.get("/", (req, res) => {
-      res.send("API of Wedding Putri and Arif");
+      res.send("API of Wedding Putri and Iqbal");
     });
     app.use("/", require("./routes"));
     app.use(responseHandler);
